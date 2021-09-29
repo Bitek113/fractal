@@ -1,0 +1,410 @@
+body {
+	margin: auto;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+#container {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	height: 100%;
+	width: 100%;
+	background-color: #3a3d44;
+	position: sticky;
+	top: 0;
+	
+}
+#header_wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+
+}
+ 
+#left-header {
+	color: lightgray;
+	width: 50%;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	font-weight: bold;
+} 
+
+h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	color: lightgray;
+}
+
+h3 {
+	padding-left: 15px;
+
+}
+
+h4 {
+	color: #414445;
+	font-size: 2rem;
+}
+
+#left-header ul {
+
+	display: flex;
+	flex-direction: row;
+/*	border: 1px solid lightgray;*/
+	border-radius: 5px;
+}
+
+#left-header li {
+	list-style: none;
+	padding-right: 10px;
+	padding-left: 10px;
+	cursor: pointer;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	/*border-left: none;
+	border-right: none;*/
+}
+
+#left-header li:hover {
+	background-color: #2d2e2e;
+
+}
+
+.font {
+	margin-left: 10px;
+/*	padding-left: 10px;*/
+	border: 1px solid lightgray;
+	padding: 13px;
+	border-radius: 5px;
+	cursor: pointer;
+	/*fill: white;*/
+}
+
+.font:hover {
+	border: 1px solid red;
+	color: red;
+}
+
+#right-header {
+	width: 28%;
+/*	background-color: blue;*/
+	display: flex;
+	justify-content:end;
+	align-items: center;
+}
+
+#right-header_wrapper {
+	border: 1px solid lightgray;
+	display: flex;
+	align-content: start;
+	padding: 10px;
+	border-radius: 5px;
+	justify-self: center;
+
+}
+
+
+.right-header_back {
+	background-color: #3a3d44;
+	margin-left: 10px;
+/*	padding-left: 10px;*/
+	border: 1px solid lightgray;
+	padding: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+	
+}
+
+.right-header_back:hover {
+	border: 1px solid red;
+	color: red;
+}
+
+.right-header_download {
+	background-color: #802b27;
+	margin-left: 10px;
+/*	padding-left: 10px;*/
+	border: 0px;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+	
+}
+
+.right-header_download:hover {
+	
+}
+
+main {
+	min-height: 200vh;
+	display: flex;
+	flex-direction: column;
+}
+
+#main-screen {
+	background-image: url("img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 90vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	column-gap: 20px;
+}
+
+#left-side-main-screen {
+	width: 40%;
+	text-align: end;
+	flex-direction: column;
+  	align-items: center;
+ 	position: relative;
+}
+
+.download_button {
+	color: rgb(41,93,145);
+	background-color: rgb(40,42,42);
+	padding: 15px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 10%;
+}
+
+.download_button:hover {
+	background-color: rgb(40,50,44);
+	cursor: pointer;
+
+}
+
+.download_button_img {
+	padding-right: 10px;
+
+
+
+}
+
+.learn_more_button_img {
+
+}
+
+.learn_more_button {
+	background-color: rgb(47,99,151);
+	padding: 15px 20px;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	border-radius: 10%;
+}
+
+.learn_more_button:hover {
+	background-color: #1615a3;
+}
+
+.main_screen_text {
+	color: rgb(41,93,145);
+	font-size: 2rem;
+}
+
+.main_screen_link {
+	color: white;
+	text-decoration: none;
+}
+
+#right-side-main-screen {
+	width: 14%;
+}
+
+#section-first {
+	width: 100%;
+	background-color: rgb(42,43,44);
+	height: 40vh;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid rgb(65,68,69);
+}
+
+#section-first_wrapper {
+	width: 50%;
+}
+
+.border {
+	width: 10%;
+	border: 1px solid rgb(65,68,69);
+	align-content: center;
+	margin: auto;
+}
+
+#section-first p {
+	font-size: 2em;
+	color: #3a3d44;
+}
+
+.section-first-img {
+	padding-top: 20px;
+	padding-left: 20px;
+	width: 50px;
+	cursor: pointer;
+}
+
+#section_second {
+	background-color: #282a2a;
+	display: flex;
+	flex-direction: column; 
+	align-items: center;
+	justify-items: center;
+	/*row-gap: 30px;*/
+}
+
+.section_second_content {
+	width: 50%;
+	height: 33%;
+	border-bottom: 1px solid rgb(65,68,69);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.section_second_content_ls {
+	width: 20vw;
+	height: 100%;
+}
+.section_second_pic {
+	border-radius: 50%;
+	width: 70%;
+	height: 70%;
+}
+
+.section_second_content_rs {
+	width: 50vw;
+	height: 100%;	
+}
+
+.section_second_content_p {
+	color: #414445;
+	font-size: 1rem;
+}
+
+#section_second_bottom {
+	min-height: 200px;
+	background-color: #282a2a;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#section_second_wrapper {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-flow: row wrap;
+
+
+}
+.section_second_bottom_boxes {
+	width: 250px;
+/*	border: 1px solid yellow;*/
+	display: flex;
+	text-align: end;
+
+
+}
+
+.section_second_wrapper_p {
+	font-size: 16px;
+	color: lightgray;
+
+}
+
+.section-second-img {
+	width: 50px;
+	display: block;
+	padding-right: 5px;
+	cursor: pointer;
+
+
+
+
+}
+
+#pre_footer {
+	background-color: rgb(42,43,44);
+	min-height: 300px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+}
+
+#pre_footer_wrapper {
+	width: 50%;
+}
+
+.pre_footer_h {
+	color: #414445;	
+	font-size: 2rem;
+
+}
+
+.pre_footer_p {
+	color: #414445;
+	font-size: 1.5rem;
+}
+
+footer {
+	min-height: 200px;
+	background-color: rgb(45,46,46);
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer_pic {
+	width: 40px;
+	padding-left: 26px;
+}
+
+.footer_p {
+	color: lightgray;
+	font-size: 1rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2a2b2c; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
